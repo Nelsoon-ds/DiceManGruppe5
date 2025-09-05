@@ -3,7 +3,7 @@ package DiceMan;
 import java.util.Objects;
 
 public class DiceMan {
-    private int antalAktiviteter = 1;
+    private int antalAktiviteter = 0;
     private int counter;
 
 
@@ -12,7 +12,7 @@ public class DiceMan {
     public void startDay() {
         System.out.println("DiceMan står op og ved ikke hvad han skal tage sig til i dag.");
 
-        while (antalAktiviteter != 7) {
+        while (antalAktiviteter != 6) {
             int result = dice.rollDice();
             switch (result) {
                 case 1:
