@@ -2,10 +2,15 @@ import java.util.Random;
 
 public class Dice {
 
+    public Dice () {
 
+    }
+    /* Laver et terninge kast */
     public int rollDice() {
         Random rand = new Random();
-        int dice = rand.nextInt(6);
-        return dice;
+        return rand.nextInt(6);
     }
 }
+
+
+//
