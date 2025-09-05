@@ -4,7 +4,7 @@ public class DiceMan {
     private String navn;
 
 
-    Dice dice = new Dice(rollDice)
+    Dice dice = new Dice();
 
     // Konstruktør
     public DiceMan(int antalAktiviteter, int counter, String navn) {
@@ -38,8 +38,10 @@ public class DiceMan {
                 break;
         }
     }
-
+/*
     public void endDay(){
     System.out.println(navn + );
     }
+
+ */
 }
