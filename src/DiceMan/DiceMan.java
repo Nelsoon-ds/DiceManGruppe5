@@ -3,7 +3,7 @@ package DiceMan;
 import java.util.Objects;
 
 public class DiceMan {
-    final private int antalAktiviteter = 6;
+    private int antalAktiviteter = 6;
     private int counter;
     private String navn;
 
@@ -12,7 +12,6 @@ public class DiceMan {
 
     // Konstruktør
     public DiceMan(int antalAktiviteter, int counter, String navn) {
-        this.antalAktiviteter = antalAktiviteter;
         this.counter = counter;
         this.navn = navn;
     }
