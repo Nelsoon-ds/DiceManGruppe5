@@ -7,7 +7,7 @@ public class dicetest {
         DiceMan diceman = new DiceMan();
 
         //starter dagen - han ruller 5 gange eller stopper tideligt
-        diceman.startDag();
+        diceman.startDay();
 
     }
 }
