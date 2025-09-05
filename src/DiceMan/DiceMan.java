@@ -3,49 +3,38 @@ package DiceMan;
 import java.util.Objects;
 
 public class DiceMan {
-    final private int antalAktiviteter = 6;
+    private int antalAktiviteter = 0;
     private int counter;
-    private String navn;
 
 
     Dice dice = new Dice();
 
-    // Konstruktør
-    public DiceMan(int antalAktiviteter, int counter, String navn) {
-        this.antalAktiviteter = antalAktiviteter;
-        this.counter = counter;
-        this.navn = navn;
-    }
-
-
     public void startDay() {
-        System.out.println(navn + " står op og ved ikke hvad han skal tage sig til i dag");
+        System.out.println("DiceMan står op og ved ikke hvad han skal tage sig til i dag.");
 
-        while (antalAktiviteter != 5) {
-
-
+        while (antalAktiviteter != 6) {
             int result = dice.rollDice();
             switch (result) {
                 case 1:
-                    System.out.println("Spiser morgenmad");
+                    System.out.println("han spiser morgenmad");
                     break;
                 case 2:
-                    System.out.println("Læser op på noget kedeligt");
+                    System.out.println("han læser op på noget kedeligt");
                     break;
                 case 3:
-                    System.out.println("Svømmer en tur");
+                    System.out.println("han svømmer en tur");
                     break;
                 case 4:
-                    System.out.println("Tager ud og fisker");
+                    System.out.println("han tager ud og fisker");
                     break;
                 case 5:
-                    System.out.println("Ringer til mor");
+                    System.out.println("han ringer til mor");
                     break;
                 case 6:
-                    System.out.println("Går tilbage i seng");
+                    System.out.println("han går tilbage i seng");
                     break;
             }
-            antalAktiviteter = antalAktiviteter - 1;
+            antalAktiviteter++;
         }
     }
 /*
